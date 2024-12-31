@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Search</title>
+    <link rel="stylesheet" href="./main/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">Home</a>
+      <a href="#">Contect</a>
+    </header>
+
+    <div class="nav-search">
+      <select class="search-select">
+        <option>All</option>
+      </select>
+      <input
+        class="search-input"
+        type="text"
+        placeholder="Search Medicine"
+        oninput="filterProduct(event)"
+      />
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <div id="products"></div>
+    <script src="./main/script.js"></script>
+  </body>
+</html>
