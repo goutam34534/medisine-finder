@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medicine Search</title>
     <link rel="stylesheet" href="./main/style.css" />
+    <link rel="stylesheet" href="main//alt.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -17,24 +18,36 @@
     <header>
       <a href="/index.html">Home</a>
       <a href="#">Contect</a>
+      <a href="/main/page/about.html">About me</a>
     </header>
-
-    <div class="nav-search">
-      <select class="search-select">
-        <option>All</option>
-      </select>
-      <input
-        class="search-input"
-        type="text"
-        placeholder="Search Medicine"
-        oninput="filterProduct(event)"
-      />
-      <div class="search-icon">
-        <i class="fa-solid fa-magnifying-glass"></i>
+    <main>
+      <div class="nav-search">
+        <select class="search-select">
+          <option>All</option>
+        </select>
+        <input
+          class="search-input"
+          type="text"
+          id="searchInput"
+          placeholder="Search Medicine"
+        />
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
-    </div>
+      <button id="searchButton">Find Alternatives</button>
+      <div id="products"></div>
+    </main>
+
+    <footer>
+      <img
+        src="https://content.jdmagicbox.com/comp/lucknow/l9/0522px522.x522.220327203038.d6l9/catalogue/prdhan-mantri-jan-aushadhi-kendra-lucknow-chemists-0fkvatjnq1.jpg"
+        alt=""
+      />
+    </footer>
 
     <div id="products"></div>
     <script src="./main/script.js"></script>
+    <script src="./main/items.js"></script>
   </body>
 </html>

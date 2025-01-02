@@ -1,118 +1,21 @@
-let products = [
-  {
-    name: "Daraprin",
-    price: 250,
-    company: "Indica Laboratories Pvt Ltd",
-    image: "https://dwaey.com/medrg/upload/1723992724.png",
-    page: "./main/html-pages/daraprin.html",
-  },
-  {
-    name: "Zytiga",
-    price: 2,
-    company: "Mylan Pharma",
-    image: "./main/images/zytiga.jpg",
-    page: "./main/html-pages/zytiga.html",
-  },
-  {
-    name: "Glivec",
-    price: 10,
-    company: "Natco Pharma",
-    image: "./main/images/balwan.jpg",
-    page: "./main/html-pages/glivec.html",
-  },
-  {
-    name: "Paracetamol",
-    price: 30,
-    company: "GlaxoSmithKline",
-    image: "./main/images/paracetamol.png",
-    page: "./main/html-pages/paracetamol.html",
-  },
-  {
-    name: "Combiflam",
-    price: 25,
-    company: "GlaxoSmithKline",
-    image: "./main/images/conbiflom.png",
-    page: "./main/html-pages/combiflam.html",
-  },
-  {
-    name: "ORS",
-    price: 11,
-    company: "FDC Ltd",
-    image: "./main/images/ors.png",
-    page: "./main/html-pages/ors.html",
-  },
-  {
-    name: "Vicks Vaporub",
-    price: 11,
-    company: "Procter & Gamble",
-    image: "./main/images/vikus.png",
-    page: "./main/html-pages/vicks.html",
-  },
-  {
-    name: "Digene",
-    price: 11,
-    company: "Abbott",
-    image: "./main/images/digene.png",
-    page: "./main/html-pages/digene.html",
-  },
-  {
-    name: "Strepsils",
-    price: 11,
-    company: "Reckitt Benckiser",
-    image: "./main/images/strepsils.png",
-    page: "./main/html-pages/strepsils.html",
-  },
-  {
-    name: "Benadryl",
-    price: 11,
-    company: "Johnson & Johnson",
-    image: "./main/images/bandrily.png",
-    page: "./main/html-pages/benadryl.html",
-  },
-  {
-    name: "Augmentin 1000 Duo Tablet",
-    price: 11,
-    company: "Alkem Laboratories ",
-    image: "./main/images/augmentin.png",
-    page: "./main/html-pages/augmentin.html",
-  },
-  {
-    name: "Crestor",
-    price: 11,
-    company: "Astrazeneca",
-    image: "./main/images/crestor.png",
-    page: "./main/html-pages/crestor.html",
-  },
-  {
-    name: "Lantus",
-    price: 11,
-    company: "Sanofi India Ltd",
-    image: "./main/images/lantus.png",
-    page: "./main/html-pages/lantus.html",
-  },
-  {
-    name: "Tamiflu",
-    price: 11,
-    company: "Roche Products India Pvt Ltd",
-    image: "./main/images/tamiflu.png",
-    page: "./main/html-pages/tamiflu.html",
-  },
-  {
-    name: "Eliquis",
-    price: 11,
-    company: "Roche Products India Pvt Ltd",
-    image: "./main/images/eliauis.png",
-    page: "./main/html-pages/eliquis.html",
-  },
-];
+let searchInput = document.querySelector("#searchInput");
+let searchButton = document.querySelector("#searchButton");
 
-function filterProduct(event) {
-  let userValue = event.target.value.toLowerCase();
+searchButton.disabled = true;
+
+searchInput.addEventListener("input", function () {
+  searchButton.disabled = searchInput.value.trim() === "";
+});
+
+searchButton.addEventListener("click", function () {
+  let userValue = searchInput.value.toLowerCase();
   let matching = products.filter((product) =>
     product.name.toLowerCase().includes(userValue)
   );
   showProduct(matching);
-}
+  searchInput.value = "";
+  searchButton.disabled = true;
+});
 
 function showProduct(matching) {
   let div = document.getElementById("products");
@@ -120,25 +23,72 @@ function showProduct(matching) {
     div.innerHTML = `<p>No matching medicine found</p>`;
     return;
   }
-
-  let productHTML = matching
+  div.innerHTML = matching
     .map(
-      (product) => `
-          <div class="product">
-            <img class="medicine-image" src="${product.image}" alt="${product.name}" />
-            <p class="medicine-name"><strong>${product.name}</strong></p>
-            <p class="price">Price: ₹${product.price}</p>
-            <p  class="price">Manufacturer:${product.company}</P>
-            <button onclick="window.location.href='${product.page}'" class="find-alternative">
-              Find Alternative
-            </button>
-          </div>
-        `
+      (product) => ` <div class="product-container">
+                        <div class="product">
+                           <img class="original-medicine-image" src="${
+                             product.image
+                           }" alt="${product.name}" />
+                             <div class="original-medicine-content">
+                              <p class="original-medicine-name">${
+                                product.name
+                              }</p>
+                                 <p class="original-medicine-price">Price: ₹${
+                                   product.price
+                                 }</p>
+                                   <p class="original-medicine-company-name">Manufacturer: ${
+                                     product.company
+                                   }</P>
+                              <a href="${
+                                product.Alt_link1
+                              }" target="_main">Alternative</a>
+                             </div>
+                          </div>
+
+                           <div class="alternative-medicines">
+                             <div class="alternative">
+                                <img src="${product.Alt_image1}" alt="${
+        product.Alt_name1
+      }"/>
+                                  <div class="content">
+                                     <h3>${product.Alt_name1}</h3>
+                                       <p>Price: Rs. ${product.Alt_price1}</p>
+                                          <p>Manufacturer: ${
+                                            product.company1
+                                          }</p>
+                                          <a href="${
+                                            product.Alt_link1
+                                          }" target="_main">Alternative</a>
+                                    </div>
+                               </div>
+                             </div>
+
+                            ${
+                              product.Alt_name2
+                                ? `<div class="alternative-medicines">
+                                  <div class="alternative">
+                                    <img
+                                      src="${product.Alt_image2}"
+                                      alt="${product.Alt_name2}"
+                                    />
+                                    <div class="content">
+                                      <h3>${product.Alt_name2}</h3>
+                                      <p>Price: Rs. ${product.Alt_price2}</p>
+                                      <p>Manufacturer: ${product.company2}</p>
+                                      <a
+                                        href="${product.Alt_link2}"
+                                        target="_main"
+                                      >
+                                        Alternative
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>`
+                                : ``
+                            }
+            
+                      </div>`
     )
     .join("");
-
-  div.innerHTML = productHTML;
 }
-
-// Initialize with all products
-showProduct(products);
