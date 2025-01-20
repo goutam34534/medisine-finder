@@ -42,7 +42,7 @@ function showProduct(matching) {
                                    }</P>
                               <a href="${
                                 product.Alt_link1
-                              }" target="_main">Alternative</a>
+                              }" target="_main">Orignal</a>
                              </div>
                           </div>
 
@@ -53,7 +53,7 @@ function showProduct(matching) {
       }"/>
                                   <div class="content">
                                      <h3>${product.Alt_name1}</h3>
-                                       <p>Price: Rs. ${product.Alt_price1}</p>
+                                       <p>Price: Rs. ₹${product.Alt_price1}</p>
                                           <p>Manufacturer: ${
                                             product.company1
                                           }</p>
@@ -74,7 +74,7 @@ function showProduct(matching) {
                                     />
                                     <div class="content">
                                       <h3>${product.Alt_name2}</h3>
-                                      <p>Price: Rs. ${product.Alt_price2}</p>
+                                      <p>Price: Rs. ₹${product.Alt_price2}</p>
                                       <p>Manufacturer: ${product.company2}</p>
                                       <a
                                         href="${product.Alt_link2}"

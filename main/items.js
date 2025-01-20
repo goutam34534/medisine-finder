@@ -14,7 +14,7 @@ let products = [
   },
   {
     name: "Zytiga",
-    price: 2,
+    price: 75000,
     company: "Mylan Pharma",
     image: "./main/images/zytiga.jpg",
     page: "./main/html-pages/zytiga.html",
