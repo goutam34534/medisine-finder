@@ -4,6 +4,8 @@ let products = [
     price: 250,
     company: "Indica Laboratories Pvt Ltd",
     image: "https://dwaey.com/medrg/upload/1723992724.png",
+    buybtn:
+      "https://dir.indiamart.com/search.mp?ss=daraprime&v=4&mcatid=&catid=&tags=res:RC2|ktp:N0|mtp:S|wc:1|qr_nm:gd|cs:7628|com-cf:nl|ptrs:na|mc:444212|cat:571|qry_typ:P|lang:en|flavl:0|rtn:0-0-0-0-5-5-0",
     Alt_image1:
       "https://www.netmeds.com/images/product-v1/600x600/1136339/daramin_25mg_tablet_10s_742022_0_0.jpg",
     Alt_name1: "Daramin",
@@ -17,7 +19,8 @@ let products = [
     price: 75000,
     company: "Mylan Pharma",
     image: "./main/images/zytiga.jpg",
-    page: "./main/html-pages/zytiga.html",
+    buybtn:
+      "https://dir.indiamart.com/search.mp?ss=zytiga&v=4&mcatid=444212&catid=571&src=as-popular%7Ckwd%3Dzytiga%7Cpos%3D1%7Ccat%3D571%7Cmcat%3D444212%7Ckwd_len%3D6%7Ckwd_cnt%3D1&prdsrc=1&tags=res:RC2|ktp:N0|stype:attr=1-br|mtp:Brn|wc:1|qr_nm:gd|cs:9381|com-cf:nl|ptrs:na|mc:185768|cat:743|qry_typ:P|lang:en|flavl:0-1|rtn:0-0-0-0-1-9-0",
     Alt_image1:
       "https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cx456kwzkuscoxk4bl4d.jpg?format=auto",
     Alt_name1: "Mytera",
@@ -39,7 +42,8 @@ let products = [
     price: 10,
     company: "Natco Pharma",
     image: "./main/images/balwan.jpg",
-    page: "./main/html-pages/glivec.html",
+    buybtn:
+      "https://dir.indiamart.com/search.mp?ss=glivec+tablets&v=4&mcatid=185768&catid=743&prdsrc=1&src=as-context%7Ckwd%3Dgl%7Cpos%3D1%7Ccat%3D743%7Cmcat%3D185768%7Ckwd_len%3D2%7Ckwd_cnt%3D1&tags=res:RC4|ktp:N0|stype:attr=1-br|mtp:Brn|wc:2|qr_nm:gd|cs:9386|com-cf:nl|ptrs:na|mc:179469|cat:743|qry_typ:P|lang:en|flavl:0-2|rtn:0-0-0-0-2-8-0",
     Alt_image1:
       "https://onemg.gumlet.io/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/a5f53d8d234d45a695d7c6f59707c652.jpg",
     Alt_name1: "Veenat",
@@ -53,7 +57,9 @@ let products = [
     price: 30,
     company: "GlaxoSmithKline",
     image: "./main/images/paracetamol.png",
-    page: "./main/html-pages/paracetamol.html",
+    buybtn:
+      "https://dir.indiamart.com/search.mp?ss=paracetamol+tablets&v=4&mcatid=5752&catid=572&prdsrc=1&src=as-context%7Ckwd%3Dparacetamol%7Cpos%3D2%7Ccat%3D572%7Cmcat%3D5752%7Ckwd_len%3D11%7Ckwd_cnt%3D1&tags=res:RC4|ktp:N0|stype:attr=1|mtp:G|grpfl:59|wc:2|qr_nm:gd|cs:9458|com-cf:nl|ptrs:na|mc:5752|cat:572|qry_typ:P|lang:en|flavl:10|rtn:0-0-0-0-3-6-1",
+
     Alt_image1:
       "https://cdn01.pharmeasy.in/dam/products_otc/H45820/crocin-650-tablet-15-nos-3-1689759566.jpg",
     Alt_name1: "Crocin",
@@ -75,7 +81,9 @@ let products = [
     price: 25,
     company: "GlaxoSmithKline",
     image: "./main/images/conbiflom.png",
-    page: "./main/html-pages/combiflam.html",
+    buybtn:
+      "https://dir.indiamart.com/search.mp?ss=combiflam+tablet&v=4&mcatid=&catid=&tags=res:RC3|ktp:N0|stype:attr=1|mtp:Brn|wc:2|qr_nm:gd|cs:9030|com-cf:nl|ptrs:na|mc:179727|cat:572|qry_typ:P|lang:en|flavl:0|rtn:1-0-1-0-3-4-1",
+
     Alt_image1:
       "https://5.imimg.com/data5/SELLER/Default/2023/9/344827499/TG/YT/FY/192270567/ibuprofen-tablet-400mg.png",
     Alt_name1: "Ibuprofen",
@@ -97,7 +105,7 @@ let products = [
     price: 11,
     company: "FDC Ltd",
     image: "./main/images/ors.png",
-    page: "./main/html-pages/ors.html",
+    buybtn: "",
     Alt_image1: "https://m.media-amazon.com/images/I/81jrDrIJoNL.jpg",
     Alt_name1: "Electral",
     Alt_price1: "price: Rs. 15-25 per sachet",
@@ -116,7 +124,7 @@ let products = [
     price: 11,
     company: "Procter & Gamble",
     image: "./main/images/vikus.png",
-    page: "./main/html-pages/vicks.html",
+    buybtn: "",
     Alt_image1: "https://m.media-amazon.com/images/I/617dG3SoVKL.jpg",
     Alt_name1: "Zandu Balm",
     Alt_price1: "40-60 for 25g",
@@ -137,7 +145,7 @@ let products = [
     price: 11,
     company: "Abbott",
     image: "./main/images/digene.png",
-    page: "./main/html-pages/digene.html",
+    buybtn: "",
     Alt_image1:
       "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/home/mobile/homepage-header-carousal-1-v3_mobile.jpg?auto=format",
     Alt_name1: "ENO",
@@ -157,7 +165,8 @@ let products = [
     price: 11,
     company: "Reckitt Benckiser",
     image: "./main/images/strepsils.png",
-    page: "./main/html-pages/strepsils.html",
+    buybtn: "",
+
     Alt_image1:
       "https://images.ctfassets.net/umpxkz97ty8t/4tjmmu8xgFdItABWjhpWTA/88afdcd6055df8b4fac3fdea0098dfa5/VCD4-Packs.png",
     Alt_name1: "Vicks",
@@ -177,7 +186,8 @@ let products = [
     price: 11,
     company: "Johnson & Johnson",
     image: "./main/images/bandrily.png",
-    page: "./main/html-pages/benadryl.html",
+    buybtn: "",
+
     Alt_image1:
       "https://shreedashrath.com/wp-content/uploads/2021/06/corex-600x600.jpg",
     Alt_name1: "Corex",
@@ -198,7 +208,8 @@ let products = [
     price: 11,
     company: "Alkem Laboratories ",
     image: "./main/images/augmentin.png",
-    page: "./main/html-pages/augmentin.html",
+    buybtn: "",
+
     Alt_image1:
       "https://images.apollo247.in/pub/media/catalog/product/c/l/cla0004.jpg",
     Alt_name1: "Clavam",
@@ -211,7 +222,7 @@ let products = [
     price: 11,
     company: "Astrazeneca",
     image: "./main/images/crestor.png",
-    page: "./main/html-pages/crestor.html",
+    buybtn: "",
     Alt_image1:
       "https://5.imimg.com/data5/SELLER/Default/2024/6/425035920/PX/LR/WN/147700842/rosuvas-10-mg-tablet1-500x500.jpg",
     Alt_name1: "Rosuvas",
@@ -224,7 +235,7 @@ let products = [
     price: 11,
     company: "Sanofi India Ltd",
     image: "./main/images/lantus.png",
-    page: "./main/html-pages/lantus.html",
+    buybtn: "",
     Alt_image1:
       "https://images.apollo247.in/pub/media/catalog/product/f/l/flu0174.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w",
     Alt_name1: "Fluvir",
@@ -237,7 +248,7 @@ let products = [
     price: 11,
     company: "Roche Products India Pvt Ltd",
     image: "./main/images/tamiflu.png",
-    page: "./main/html-pages/tamiflu.html",
+    buybtn: "",
     Alt_image1:
       "https://images.apollo247.in/pub/media/catalog/product/f/l/flu0174.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w",
     Alt_name1: "Fluvir",
@@ -250,7 +261,7 @@ let products = [
     price: 11,
     company: "Roche Products India Pvt Ltd",
     image: "./main/images/eliauis.png",
-    page: "./main/html-pages/eliquis.html",
+    buybtn: "",
     Alt_image1:
       "https://www.practostatic.com/practopedia-images/v3/res-750/apigat-2-5-mg-tablet-30-s_15fa3947-9fad-47f2-bbed-8d5f500e66e9.JPG",
     Alt_name1: "Apigat",

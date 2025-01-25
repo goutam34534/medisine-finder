@@ -38,7 +38,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-
   background-image: url("/med.jpg");
   background-position: center;
   background-size: cover;
@@ -130,6 +129,12 @@ marquee {
   position: relative;
 }
 
+.product-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .product {
   display: flex;
   padding: 20px;
@@ -138,12 +143,14 @@ marquee {
   background-color: #34e684;
   width: 90%;
   max-width: 300px;
+  height: 176;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 #products {
-  z-index: 7;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .container {
@@ -198,33 +205,35 @@ ul li {
   margin-top: 2px;
 }
 
-.original-medicine-content a {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: green;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 2px;
+.buybtn {
+  background-color: #0f1111;
+  padding: 4px 20px 4px 20px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: medium;
 }
 
+.buybtn a {
+  color: black;
+}
 .alternative-medicines {
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #34e684;
   color: white;
   width: 90%;
   max-width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .alternative {
   display: flex;
+  margin: 5px;
+  background-color: #34e684;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .content {
@@ -256,9 +265,9 @@ ul li {
 .alternative a {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
+  font-size: medium;
+  color: #141313;
+  background-color: white;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 2px;
@@ -280,4 +289,18 @@ footer img {
   width: 80px;
   height: 80px;
   border-radius: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.find-alternatives-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 8px;
 }
