@@ -32,9 +32,9 @@ function showProduct(matching) {
             <p class="original-medicine-company-name">Manufacturer: ${
               product.company
             }</p>
-           <a href="${
-             product.buybtn
-           }"><button class="buybtn">Buy now</button></a> 
+          <button class="buybtn"> <a href="${
+            product.buybtn
+          }">Buy now </a> </button></a> 
             <button class="find-alternatives-btn" onclick="toggleAlternatives(this)">Find Alternatives</button>
           </div>
         </div>
@@ -46,7 +46,7 @@ function showProduct(matching) {
               <h3>${product.Alt_name1}</h3>
               <p>Price: ₹${product.Alt_price1}</p>
               <p>Manufacturer: ${product.company1}</p>
-              <a href="${product.Alt_link1}" target="_main">Alternative</a>
+              <a href="${product.Alt_link1}" target="_main">Buy now</a>
             </div>
           </div>
 
@@ -58,7 +58,7 @@ function showProduct(matching) {
                     <h3>${product.Alt_name2}</h3>
                     <p>Price: ₹${product.Alt_price2}</p>
                     <p>Manufacturer: ${product.company2}</p>
-                    <a href="${product.Alt_link2}" target="_main">Alternative</a>
+                    <a href="${product.Alt_link2}" target="_main">Buy now</a>
                   </div>
                 </div>`
               : ""
